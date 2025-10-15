@@ -97,6 +97,18 @@
         width: 100%;
     }
 
+    /* Ensure footer links are white on all screen sizes and states */
+    .site-footer a,
+    .site-footer a:link,
+    .site-footer a:visited {
+        color: #fff;
+    }
+    .site-footer a:hover,
+    .site-footer a:focus {
+        color: #e6e6e6;
+        text-decoration: underline;
+    }
+
     .footer-content {
         display: flex;
         flex-direction: column;
