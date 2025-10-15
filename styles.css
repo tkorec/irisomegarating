@@ -104,6 +104,10 @@
         align-items: center;
     }
 
+    .site-footer a {
+        color: white;
+    }
+
     .linkedin-link {
         margin-top: 10px;
     }

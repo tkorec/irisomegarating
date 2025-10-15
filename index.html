@@ -6,6 +6,7 @@
     <title>Iris Omega Rating</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="logo.png">
+    <!-- https://tkorec.github.io/irisomegarating/ -->
 </head>
 <body>
     <header>
@@ -18,7 +19,6 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="#documentation">Documentation</a></li>
             </ul>
         </nav>
@@ -34,31 +34,12 @@
                 <img src="linkedin-logo.png" alt="LinkedIn" class="linkedin-logo" style="height:24px;vertical-align:middle;">
             </a>
             <span>CIN: 10885731</span>
+            <span><a href="mailto:tk.korec@gmail.com">tk.korec@gmail.com</a></span>
             <span>Address: Podjavorinske 1601/8, 149 00 Prague, Czech Republic</span>
             <span>Account: (IBAN) CZ7355000000003070204002 | (SWIFT/BIC) RZBCCZPP<br>Raiffeisenbank a.s., Hvezdova 1716/2b, 140 78 Prague, Czech Republic</span>
         </div>
     </footer>
-    <!-- Modal Structure -->
-    <div id="contact-modal">
-    <div class="modal-content">
-        <button id="close-modal">&times;</button>
-        <p>For implementation inquiries and pricing, please reach out via email or LinkedIn.</p>
-        <p>Email: <a href="mailto:tk.korec@gmail.com">tk.korec@gmail.com</a></p>
-        <p>Or use <a href="https://www.linkedin.com/in/tomas-k-korec-4419aa214/" target="_blank">LinkedIn</a></p>
-    </div>
 </div>
 
-<script>
-    document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
-        e.preventDefault();
-        document.getElementById('contact-modal').classList.add('active');
-    });
-    document.getElementById('close-modal').onclick = function() {
-        document.getElementById('contact-modal').classList.remove('active');
-    };
-    document.getElementById('contact-modal').addEventListener('click', function(e) {
-        if (e.target === this) this.classList.remove('active');
-    });
-</script>
 </body>
 </html>
