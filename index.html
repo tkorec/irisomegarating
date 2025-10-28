@@ -19,7 +19,7 @@
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="https://github.com/tkorec/irisomegarating/tree/model" target="_blank">Documentation</a></li>
             </ul>
         </nav>
     </header>
@@ -27,13 +27,15 @@
         <section class="presentation-area">
             <!-- PDF selector -->
             <select id="pdf-switcher" aria-label="Choose PDF to view" style="max-width:360px; margin:12px auto; display:block;">
-                <option value="research_paper.pdf">Research Paper</option>
                 <option value="presentation.pdf">Presentation</option>
+                <option value="research_paper.pdf">Research Paper</option>
+                <option value="table_of_fees.pdf">Table of Fees</option>
+                <option value="legal_statement.pdf">Legal Statement</option>
                 <!-- add more options / files as needed -->
             </select>
 
             <!-- iframe that displays selected PDF -->
-            <iframe id="pdf-viewer" src="research_paper.pdf" width="100%" height="600px" title="PDF viewer"></iframe>
+            <iframe id="pdf-viewer" src="presentation.pdf" width="100%" height="600px" title="PDF viewer"></iframe>
         </section>
     </main>
     <footer class="site-footer">
